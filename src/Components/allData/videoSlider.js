@@ -62,7 +62,7 @@ const videoSlider = [
       },
       {
         title: "Sanbot",
-        dis: "d6d",
+        dis: "d6d2",
         video:"https://www.youtube.com/embed/cwZc81p53Fo"
 
       },  ];

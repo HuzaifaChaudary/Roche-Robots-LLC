@@ -2,6 +2,7 @@ import React, { useEffect} from 'react';
 import './ourRobot.css';
 import VideoCarusol from './VideoCarusol';
 import RevealButton from '../Body/RevealButton';
+import robotImages from '../allData/robotImages';
 
 const OurRobot = () => {
 
@@ -39,20 +40,21 @@ if (el.checked) {
               <div className="card">
                 <div className="card-header">
                   <div className="grid">
-                    <div className="img">
-                      <img src={require("../../assets/Picture2.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture3.png")} alt="" />
 
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture4.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture5.png")} alt="" />
 
-                    </div>
+                    {
+                      robotImages.disabilyRobots.map( pic => {
+                        return (
+                          <div className='img'>
+                          <img src={pic.img} alt="" />
+                            </div>
+    
+                        )
+                      })
+                    }
+
+
+
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -132,20 +134,22 @@ if (el.checked) {
               <div className="card">
                 <div className="card-header">
                   <div className="grid">
-                    <div className="img">
-                      <img src={require("../../assets/Picture7.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture8.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture9.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img 
-                 src={require("../../assets/Snow.png")} alt=""
-                      />
-                    </div>
+
+
+
+                     {
+                      robotImages.agedCareRobots.map( pic => {
+                        return (
+                          <div className='img'>
+                          <img src={pic.img} alt="" />
+                            </div>
+    
+                        )
+                      })
+                    }
+
+
+
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -192,19 +196,23 @@ if (el.checked) {
             <div className="col animate hook2">
               <div className="card">
                 <div className="card-header">
-                  <div className="grid">
-                    <div className="img">
-                      <img src={require("../../assets/Picture11.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture12.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture13.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture14.png")} alt="" />
-                    </div>
+                <div className="grid">
+
+
+
+                     {
+                      robotImages.childCareRobots.map( pic => {
+                        return (
+                          <div className='img'>
+                          <img src={pic.img} alt="" />
+                            </div>
+    
+                        )
+                      })
+                    }
+
+
+                    
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -245,19 +253,23 @@ if (el.checked) {
             <div className="col animate hook1">
               <div className="card">
                 <div className="card-header">
-                  <div className="grid">
-                    <div className="img">
-                      <img src={require("../../assets/Picture15.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture16.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture17.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture18.png")} alt="" />
-                    </div>
+                <div className="grid">
+
+
+
+                {
+                      robotImages.companionRobots.map( pic => {
+                        return (
+                          <div className='img'>
+                          <img src={pic.img} alt="" />
+                            </div>
+    
+                        )
+                      })
+                    }
+
+
+                    
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -305,19 +317,23 @@ if (el.checked) {
             <div className="col animate hook3">
               <div className="card">
                 <div className="card-header">
-                  <div className="grid">
-                    <div className="img">
-                      <img src={require("../../assets/Picture19.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture20.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture21.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture22.png")} alt="" />
-                    </div>
+                <div className="grid">
+
+
+
+                {
+                      robotImages.domesticRobots.map( pic => {
+                        return (
+                          <div className='img'>
+                          <img src={pic.img} alt="" />
+                            </div>
+    
+                        )
+                      })
+                    }
+
+
+                    
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -364,19 +380,23 @@ if (el.checked) {
             <div className="col animate hook2">
               <div className="card">
                 <div className="card-header">
-                  <div className="grid">
-                    <div className="img">
-                      <img src={require("../../assets/Picture23.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture24.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture25.png")} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={require("../../assets/Picture26.png")} alt="" />
-                    </div>
+                <div className="grid">
+
+
+
+                {
+                      robotImages.petRobots.map( pic => {
+                        return (
+                          <div className='img'>
+                          <img src={pic.img} alt="" />
+                            </div>
+    
+                        )
+                      })
+                    }
+
+
+                    
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}

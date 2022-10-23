@@ -24,7 +24,7 @@ const VideoCarusol = () => {
             <CarouselItem  key={vd.dis}>
               <h3 className="round2">{vd.title}</h3>
               <iframe className='round' width="100%" height="480" src={vd.video} title="YouTube video player"
-                frameBorder="0" pip={true}
+                frameBorder="0" 
                   allowFullScreen></iframe>
 
 

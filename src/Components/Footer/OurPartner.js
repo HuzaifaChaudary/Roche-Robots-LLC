@@ -45,7 +45,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
         className="mySwiper "
       >
         {
-            Partners.map( pt => <SwiperSlide  className="bullet"><img src={pt.img} alt="" srcset="" /></SwiperSlide> )
+            Partners.map( pt => <SwiperSlide  key={pt.id} className="bullet"><img src={pt.img} alt=""  /></SwiperSlide> )
         }
         
       </Swiper>

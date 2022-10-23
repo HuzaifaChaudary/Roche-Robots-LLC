@@ -14,8 +14,6 @@
 }
 .curve{
     position: absolute;
-    background-color: #17182447;
-    height:130vh;
     width: 100%;
     background-size: cover;
     z-index: -3;

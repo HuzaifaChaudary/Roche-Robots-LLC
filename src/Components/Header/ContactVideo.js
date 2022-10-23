@@ -1,5 +1,5 @@
 import React from 'react';
-import contact  from '../../assets/7_contact_video_header.mp4';
+import contact  from '../../assets/Contact Page Sm.mp4';
 
 
 const ContactVideo = () => {

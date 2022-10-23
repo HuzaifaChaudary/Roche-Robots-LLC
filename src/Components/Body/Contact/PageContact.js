@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PageContact.css';
+import  ReCAPTCHA from "react-google-recaptcha";
+
+
 import data from '../../allData/Data';
 
 const PageContact = () => {
+  const[ btn ,setBtn]=useState(true);
+  const captchHandler=()=>{
+    setBtn(false);
+  }
+
 //   const select = document.getElementById("category");
 
 // data.forEach((element) => {
@@ -132,7 +140,10 @@ title="test"
                   ></textarea>
 
                 </div>
-                <button type="submit">SEND US</button>
+                <ReCAPTCHA sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+               onChange={captchHandler}></ReCAPTCHA>
+
+                <button type="submit" disabled={btn}>SEND US</button>
               </form>
             </div>
           </div>

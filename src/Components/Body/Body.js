@@ -13,7 +13,7 @@ import PageDemonstration from '../Demonstration/PageDemonstration';
 const Body = () => {
     return (
         <section >
-            <img src={ require("../../assets/cd.jpg")} alt=""  className='main-img'/>
+            <img src={ require("../../assets/new.jpg")} alt=""  className='main-img'/>
             <section className='main-body'>
             <Social></Social>
             <Routes>

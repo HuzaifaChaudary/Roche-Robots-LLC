@@ -16,8 +16,8 @@ const About = () => {
   }
   useEffect(() => {
     window.addEventListener('resize', detect);
-    if (size > 1439) {
-      setWidth('0 0 1440 320')
+    if (size < 1445) {
+      setWidth('0 0 1440 317')
     }
 
     else if (size < 450) {
@@ -49,7 +49,7 @@ const About = () => {
   return (
     <div >
       <div class="curve">
-        <svg id='svg' xmlns="../../assets/cd.jpg" viewBox={width}><path fill="#ffffffe9" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,106.7C480,128,600,160,720,181.3C840,203,960,213,1080,197.3C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg id='svg' xmlns="../../assets/cd.jpg" viewBox={width}><path fill="#ffffffe9" fillOpacity="1" d="M0,64L60,69.3C120,75,240,85,360,106.7C480,128,600,160,720,181.3C840,203,960,213,1080,197.3C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
 
       </div>

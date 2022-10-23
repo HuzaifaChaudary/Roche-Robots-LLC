@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Demonstration.css';
 import  { useRef } from 'react';
-import  { ReCAPTCHA } from "react-google-recaptcha";
+import  ReCAPTCHA from "react-google-recaptcha";
 const PageDemonstration = () => {
+    const[ btn ,setBtn]=useState(true);
+    const captchHandler=()=>{
+      setBtn(false);
+    }
   const captchaRef = useRef(null)
   return (
     <div className='demo'>
@@ -15,17 +19,7 @@ const PageDemonstration = () => {
           <div className="row display  ">
 
             <div className="col-md-6  ">
-              {/* <h3 className="demo-text paddig-top"> Booking a Demonstration</h3>
-              <p> When you schedule a demonstration be assured it is a free
-                service offered by Roche Robots to legitimate prospective
-                customers. If you are serious about a robot purchase than so are
-                we. We offer potential customers the opportunity to
-                have a live demonstration of the product, either in your office
-                if one is available, or in your home. With a live demonstration, customers are
-                able to view how the product runs, understand its key features
-                and operation, and ask questions in real time.
-              </p> */}
-              <img src={require("../../assets/display  product.png")} alt="" height='94%' width='100%' />
+              <img src={require("../../assets/display  product.png")} alt="" height='100%' width='100%' />
             </div>
             <div className="col-md-6">
               <form method="post" class="col-md-6" action="contactmail.php">
@@ -159,9 +153,9 @@ const PageDemonstration = () => {
                   ></textarea>
 
                 </div>
-                <ReCAPTCHA sitekey='6LdiRpEiAAAAAOy1bX8G3RQBliWC6szVijDdUdha'
-                ref={captchaRef}></ReCAPTCHA>
-                <button type="submit">SEND US</button>
+                <ReCAPTCHA sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+                ref={captchaRef} onChange={captchHandler}></ReCAPTCHA>
+                <button type="submit" disabled={btn}>SEND US</button>
               </form>
 
             </div>
