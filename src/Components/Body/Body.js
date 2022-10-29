@@ -7,18 +7,21 @@ import PageAbout from '../About/PageAbout';
 import PageContact from './Contact/PageContact';
 import PageService from './../Service/PageService';
 import PageDemonstration from '../Demonstration/PageDemonstration';
+import PageProduct from './../Product/PageProduct';
 
 
 
-const Body = () => {
+const Body = (props) => {
     return (
         <section >
             <img src={ require("../../assets/new.jpg")} alt=""  className='main-img'/>
-            <section className='main-body'>
+            <section className='main-body'  >
             <Social></Social>
             <Routes>
             <Route path='/' element ={<PageHome/>}/>
             <Route path='/about' element ={<PageAbout/>}/>
+            <Route path='/products' element ={<PageProduct/>}/>
+            <Route  path='/products/:pdkey' element ={<PageProduct/>}/>
             <Route path='/services' element ={<PageService/>}/>
             <Route path='/demonstration' element ={<PageDemonstration/>}/>
             <Route path='/contact' element ={<PageContact/>}/>

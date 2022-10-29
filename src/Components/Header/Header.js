@@ -4,10 +4,13 @@ import HeaderVideo from './HeaderVideo';
 import Navbar from './Navbar';
 
 
-const Header = () => {
+const Header = (props) => {
+    const categoryIndex=(index)=>{
+        props.onClickCategory(index);
+    }
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar onct={categoryIndex} ></Navbar>
             <HeaderVideo  ></HeaderVideo>
             <BusinessRobot></BusinessRobot>
         </div>

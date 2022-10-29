@@ -5,6 +5,7 @@ import AboutGlass from '../Home/AboutGlass';
 import { Route, Routes } from 'react-router-dom';
 import Glass from './Contact/Glass';
 import ServiceGlass from '../Service/ServiceGlass';
+import ProductGlass from '../Product/ProductGlass';
 
 const About = () => {
   var view = ' 0 0 1440 320'
@@ -56,6 +57,8 @@ const About = () => {
       <Routes>
         <Route path='/' element={<AboutGlass />} />
         <Route path='/about' element={<AboutGlass />} />
+        <Route path='/products' element={<ProductGlass />} />
+        <Route path='/products/:pdkey' element={<ProductGlass />} />
         <Route path='/services' element={<ServiceGlass />} />
         <Route path='/demonstration' element={<ServiceGlass />} />
         <Route path='/contact' element={<Glass />} />

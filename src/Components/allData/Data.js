@@ -10,7 +10,7 @@ const data = [
           video: [
             "s7j9-iko3ZA",
             "61WEXOL2_SE",
-            "251EitjnADM",
+            "LQlNtxurleo",
             "Ced5VWqQ1fU",
             "TajRtW0GiSU",
             "5GmR2sVjT14",
@@ -24,7 +24,7 @@ const data = [
             },
             {
               title: "FEATURES & APPLICATIONS",
-              content: `<table>
+              content: ` <table>
                   <tr>
                     <th>Features</th>
                     <th>Applications</th>
@@ -145,6 +145,7 @@ const data = [
   
   
                   <!-- Here is your Image . input Your Image File location under the src "" -->
+                  
                   <img src="./assets/pdficon.png" alt="" height="50px">
   
   
