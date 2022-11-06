@@ -4,10 +4,10 @@ var ftpDeploy = new Deploy();
 var config = {
     host : "ftp.rocherobots.com",
     user : "rocherob",
-    password : "01BLUEhen!!",
+    password : "001elephANT!",
     port: 21,
     localRoot: __dirname + '/build',
-    remoteRoot: '/public_html/react-rocherobots-com',
+    remoteRoot: '/public_html/',
     include: ['*'],
     deleteRemote: true 
 }

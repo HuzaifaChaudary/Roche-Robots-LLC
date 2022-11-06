@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {  } from 'react-router-dom';
 import links from '../allData/SocialLinks';
 import './social.css'
 
@@ -21,8 +22,9 @@ const Social = () => {
       <ul>
         {
           links.map(data => <a 
-                        href={data.link}
-                        key={links.src}>
+                        href={data.src}
+                        key={links.src}
+                        target='blank'>
                       <li>
                         {data.icon}
                       </li>

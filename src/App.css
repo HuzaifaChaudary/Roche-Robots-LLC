@@ -35,3 +35,42 @@
     position: relative;
     overflow: hidden;
 }
+.glass-texts{
+    color: aliceblue;
+    font-size: 1rem;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px)!important;
+    background-image: linear-gradient(90deg,hsla(0,0%,51%,.067),hsla(0,0%,46%,.145));
+    border: 2px outset #dfc6c6!important;
+    border-bottom: 2px solid #fff3;
+    border-radius: 0.8em;
+    box-shadow: 0 2px 6px #0001, 0 5px 15px #0005;
+    box-shadow: 0 2px 5px #0005;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.newsletter form{
+    width: 80%;
+}
+.newsletter button{
+    background-image: linear-gradient(45deg,#cc2b5e ,#753a88);
+    padding: 10px 80px;
+    border-radius: 10px;
+    color: aliceblue;
+    border: none;
+    margin: 0 20px;
+}
+.newsletter .txt_field input {
+    color: white;
+
+}
+ .newsletter .txt_field label{
+    color: white;
+}

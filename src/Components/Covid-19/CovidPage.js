@@ -1,29 +1,16 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import data from '../allData/Data';
-import './Product.css';
-import { CategoryContext } from './../../App';
-const PageProduct = (props) => {
-   const categoris = useContext(CategoryContext);
-   const [slide ,setSlide]=useState(0);
-   const plus=()=> setSlide(slide+1);
-
-   
-   const minus=()=> setSlide(slide-1);
-  
-  const [category ,setCategory]=useState(data[0]);
-  useEffect(()=>{
-    setCategory(data[categoris])
-  },[categoris]);
 
 
+const CovidPage = () => {
     return (
         <div className='product'>
       <div className="catagory-name" id="three-container" >
         
-        <h2 className='annimation'> {category.category} </h2>
+        <h2 className='annimation'> {data[8].category} </h2>
       </div>
       <div className='container' >
-      <iframe className='rounds' width="100%" height="500" src={`https://www.youtube.com/embed/${category.robots[slide].video[slide]}`}  title="YouTube video player"
+      <iframe className='rounds' width="100%" height="500" src={`https://www.youtube.com/embed/${data[8].robots[0].video[0]}`}  title="YouTube video player"
                 frameBorder="0" 
                   allowFullScreen></iframe>
           </div>
@@ -32,15 +19,15 @@ const PageProduct = (props) => {
         <div className="container py-3">
           <div className="row mb-5">
             <div className="col-md-6">
-              <h2>{category.robots[slide].name}</h2>
-              <h4>{ category.robots[slide].shortDis} </h4>
+              <h2>{data[8].robots[0].name}</h2>
+              <h4>{ data[8].robots[0].shortDis} </h4>
             </div>
             <div className="col-md-6">
               <div className="rate">
                 <img src={require("../../assets/RatingStars.png")} alt="" />
                 <p id="rating">5</p>
               </div>
-              <h3>Price: <span> {category.robots[slide].price} </span></h3>
+              <h3>Price: <span> {data[8].robots[0].price} </span></h3>
             </div>
           </div>
           <div className="row justify-content-center buy-botton button-deck">
@@ -57,9 +44,7 @@ const PageProduct = (props) => {
 
 
               </div>
-    
-
     );
 };
 
-export default PageProduct;
+export default CovidPage;

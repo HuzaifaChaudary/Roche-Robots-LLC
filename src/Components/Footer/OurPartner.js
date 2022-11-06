@@ -20,16 +20,23 @@ import { Autoplay, Pagination, Navigation } from "swiper";
    return (
     <div className="partner">
       <Swiper
-        spaceBetween={30}
-        slidesPerView={5}
+        spaceBetween={10}
+        slidesPerView={2}
         loop={true}
         centeredSlides={true}
         breakpoints={{
-            768: {
-                slidesPerView:5,
-                spaceBetween:30,
-                
-            }
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          }
         }
             
         }

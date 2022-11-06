@@ -209,14 +209,14 @@
   }
   
   .float:nth-child(1) {
-    left: 1rem;
+    left: 5rem;
     bottom: 5rem;
     z-index: 2;
     animation-delay: 0.5s;
   }
   
   .float:nth-child(2) {
-    right: 2rem;
+    right: 5rem;
     bottom: 20rem;
     z-index: 2;
     animation-delay: 1s;
@@ -257,12 +257,12 @@
   
   .contact  .sec2 {
     overflow: hidden;
-    padding: 1rem 1rem 3rem;
+    padding: 3rem 1rem 3rem;
   }
   
   .contact  .sec2 .container  .card {
     position: relative;
-    padding: 2em 2em 1em;
+    padding:  1em 1em 0em 1em;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -275,7 +275,7 @@
   }
   .contact  .sec2  .container .col {
     position: relative;
-    padding: 2em 2em 1em;
+    padding: 1em 3em 1em;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -289,7 +289,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 55px;
     width: 50%;
     height: 100%;
     background-color: white;
@@ -426,6 +426,7 @@
     font-family: "popins-bold";
     border: 2px solid rgba(0, 0, 0, 0.808);
     font-size: 0.9rem;
+
     transition: none;
     margin-top: auto;
   }
@@ -449,6 +450,7 @@
   .contact  .sec2 .card p {
     font-weight: 500;
     font-size: 0.8rem;
+    text-align: justify;
     opacity: 0.8;
   }
   

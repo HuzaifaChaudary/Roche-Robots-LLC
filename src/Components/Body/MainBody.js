@@ -11,35 +11,32 @@ import PageProduct from './../Product/PageProduct';
 import CovidPage from '../Covid-19/CovidPage';
 
 
+const MainBody = (props) => {
+    const setIndex=(event)=>{
+        props.onClickCategory(event);
 
-const Body = (props) => {
-        
+    }
     return (
-
-    
         <section >
             <img src={ require("../../assets/new.jpg")} alt=""  className='main-img'/>
             <section className='main-body'  >
             <Social></Social>
             <Routes>
-            <Route path='/' element ={<PageHome />}/>
+            <Route path='/' element ={<PageHome setIndex={setIndex} />}/>
             <Route path='/about' element ={<PageAbout/>}/>
             <Route path='/products' element ={<PageProduct/>}/>
             <Route  path='/products/:pdkey' element ={<PageProduct/>}/>
             <Route path='/services' element ={<PageService/>}/>
             <Route path='/demonstration' element ={<PageDemonstration/>}/>
             <Route path='/covid' element ={<CovidPage/>}/>
-            <Route path='/contact' element ={<CovidPage/>}/>
+            <Route path='/contact' element ={<PageContact/>}/>
             </Routes>
 
             </section>
             <About></About>
 
         </section>
-
     );
-
-      
 };
 
-export default Body;
+export default MainBody;

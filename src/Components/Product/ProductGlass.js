@@ -46,10 +46,12 @@ const ProductGlass = () => {
     <label for="review">
       <h5>
         REVIEWS
-        <i className="fa-solid fa-plus"></i>
-        <i className="fa-solid fa-xmark"></i>
+        <i className="fa-solid fa-angle-down"></i>
+            <i className="fa-solid fa-xmark"></i>
       </h5>
-      <div className="hidden" id="reviews"></div>
+      <div className="hidden" id="reviews">
+        <h4 className='text-center'>Reviews Coming Soon</h4>
+      </div>
     </label>
   </div>
 </div>

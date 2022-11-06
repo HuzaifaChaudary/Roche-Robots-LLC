@@ -448,6 +448,7 @@
   }
   
   .catagory-name   {
+
       filter: contrast(10);
     position: relative;
     z-index: 2;
@@ -504,4 +505,42 @@
       }
   }
   
-  
+  .annimation{
+    padding: 40px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    font-size: 6rem;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1300px 0;
+    animation:  back 8s linear infinite alternate; 
+
+
+
+
+    /* transform: translate(-50% ,50%);
+    font-size: 6rem;
+    -webkit-text-stroke: 1px #fff;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation:  back 5s linear infinite alternate; */
+
+  }
+  @keyframes back {
+    100%{
+      background-position: 0 0;
+    }
+    
+  }
+  .catagory-name   {
+width: 100%;
+height: 200px;
+  position: relative;
+  opacity: 1;
+}
+
+

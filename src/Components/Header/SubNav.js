@@ -9,12 +9,17 @@ console.log(props.onMouse);
 
     }
     return (
-        <>
+        <div onClick={props.Ctselect}>
                             {
-                    data.map( (ct,key) => <Link  to={'/products/'+ ct.category} className='vanish' onClick={event=>categoryHandler(event,key)} key={key} > {ct.category}</Link>  )
+                    data.map( (ct,key) => 
+                    {
+                        return(
+                            <Link  to={'/products/'+ct.category} className='vanish' onClick={event=>categoryHandler(event,key)} key={key}  > {ct.category}</Link>
+                        )
+                    }  )
                 }
 
-        </>
+        </div>
     );
 };
 

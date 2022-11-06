@@ -132,15 +132,17 @@
   /* Glass morphism */
    .glass .cards p {
     font-size: 0.85rem;
+    text-align: justify;
   }
   
    .glass .row {
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 25px;
   }
   
    .glass .cards {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     margin: 1em;
     text-align: center;
     border: none;

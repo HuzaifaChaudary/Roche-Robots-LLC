@@ -13,13 +13,34 @@ const PageDemonstration = () => {
 
       <div className="container-fluid sec1 py-5">
         <div className="container  ">
-          <h3 className="demo-text"> Free demonstrations on the Gold Coast, and South East Queensland</h3>
+          <h3 className="demo-text"> Free Demonstrations on the Gold Coast and Brisbane</h3>
 
 
           <div className="row display  ">
 
             <div className="col-md-6  ">
-              <img src={require("../../assets/display  product.png")} alt="" height='100%' width='100%' />
+            <div className="demo-video">
+                <iframe className="round" width="100%" height="400" src="https://www.youtube.com/embed/Am1-Hg7dfuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              </div>
+              <div className="col-md-12  box-shadow">
+              <h5 >AndyGirl Covid-19 Ozone Disinfectant Machine</h5>
+              <p>AndyGirl Features: Effective against COVID-19 by reducing viral load; kills 99.99% of viruses and bacteria; kills moulds,
+                 fungi and algae; removes dust, odour, & formaldehyde; used in homes, offices, airplanes, trains, buses, bbers, classNamerooms, 
+                 doctors, gyms and hospitals, etc; reaches areas up to 150 Square Meters; AndyGirl Alone Makes Ozone Water - 
+                 100 ml of Ozone Water Every 20 Minutes; AndyGirl Operates on Distilled Water and Tap Water; AndyGirl Produces Ozone (O3),
+                  Hydroxyl Radical (-OH), Negative Oxygen Ions (Oe), Oxygen (O2) and water (H2O), which Do Not Pollute the Environment;
+                   Easy to Operate; 12 Months Warranty; 24 Hours Support;
+                    Free Remote Assistance. AndyGirl can kill and decompose bacteria spores,
+                     viruses and formaldehyde indiscriminately. Non toxic, harmless, environmentally friendly.
+                      The main ingredient for disinfection formaldehyde removal and purification is “deionised water”. <br />
+                      Suitable for: Homes • Retail Stores • Medical Centres • Hospitals • Warehouses • Government Houses • Prisons • Child Care • Aged Care • Disability Homes • Entertainment Venues • Hospitality • Tourism • Gyms etc...
+
+</p>
+
+            </div>
+
+
             </div>
             <div className="col-md-6">
               <form method="post" class="col-md-6" action="contactmail.php">
@@ -107,7 +128,7 @@ const PageDemonstration = () => {
                   />
                   <span></span>
 
-                  <label for="phone" class="form-label">Street Address</label>
+                  <label for="phone" class="form-label">Street Address<span>*</span></label>
 
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
@@ -165,30 +186,7 @@ const PageDemonstration = () => {
 
         <div className="container">
 
-
-
-          <div className="row section-header ">
-            <h4 >Book a Free Demo Now </h4>
-
-
-            <div className="col-md-6">
-
-              <div className="demo-video">
-                <iframe className="round" width="100%" height="360" src="https://www.youtube.com/embed/Am1-Hg7dfuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-              </div>
-            </div>
-            <div className="col-md-6  box-shadow">
-              <h5 >AndyGirl Covid-19 Ozone Disinfectant Machine</h5>
-              <p>AndyGirl Features: Effective against COVID-19 by reducing viral load; kills 99.99% of viruses and bacteria; kills moulds, fungi and algae; removes dust, odour, & formaldehyde; used in homes, offices, airplanes, trains, buses, bbers, classNamerooms, doctors, gyms and hospitals, etc; reaches areas up to 150 Square Meters; AndyGirl Alone Makes Ozone Water - 100 ml of Ozone Water Every 20 Minutes; AndyGirl Operates on Distilled Water and Tap Water; AndyGirl Produces Ozone (O3), Hydroxyl Radical (-OH), Negative Oxygen Ions (Oe), Oxygen (O2) and water (H2O), which Do Not Pollute the Environment; Easy to Operate; 12 Months Warranty; 24 Hours Support; Free Remote Assistance. AndyGirl can kill and decompose bacteria spores, viruses and formaldehyde indiscriminately. Non toxic, harmless, environmentally friendly. The main ingredient for disinfection , formaldehyde removal and purification is “deionised water”.</p>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="row section-header ">
+        <div className="row section-header ">
             <h4 >Book a Free Demo Now </h4>
             <div className="col-md-6  box-shadow">
               <h5 >KettyBot -Greet guests and delivery foods robot</h5>
@@ -201,11 +199,56 @@ const PageDemonstration = () => {
             <div className="col-md-6">
 
               <div className="demo-video">
-                <iframe className="round" width="100%" height="360" src="https://www.youtube.com/embed/yXp6nEI9Fjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="round" width="100%" height="410" src="https://www.youtube.com/embed/yXp6nEI9Fjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
               </div>
             </div>
           </div>
+
+
+        <div className="row section-header ">
+            <h4 >Book a Free Demo Now </h4>
+
+
+            <div className="col-md-6">
+
+              <div className="demo-video">
+                <iframe className="round" width="100%" height="410" src="https://www.youtube.com/embed/A6vH-QyBTIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              </div>
+            </div>
+            
+            <div className="col-md-6  box-shadow">
+              <h5 >BellaBot Covid-19 Ozone Disinfectant Machine</h5>
+              <p>
+              Bellabot - The latest delivery robot designed by Pudu, BellaBot inherits the outstanding characteristics of the previous generation, while being endowed with superior human-Robot interaction capabilities. Featuring an innovative bionic design language, cute modeling,multi-modal interaction and many other new functions, BellaBot provides users with an unprecedented food delivery robot experience. BellaBot supports both Laser SLAM and Visual SLAM positioning and navigation solutions in order to adapt to more scenarios. Both of which are accurate and easy to use. Both positioning solutions which BellaBot offers provides the same excellent user experience. While the positioning solutions differ, BellaBot's customer-centered service never changes. BellaBot adopts an innovative bionic design. The bionic design is just perfect from the height of the machine body to the screen tilt, and to the shape curve. Obstacle detection frequency up to5400 times per minute.                </p>
+
+            </div>
+
+          </div>
+
+          <div className="row section-header ">
+            <h4 >Book a Free Demo Now </h4>
+
+
+            <div className="col-md-6">
+
+              <div className="demo-video">
+                <iframe className="round" width="100%" height="410" src="https://www.youtube.com/embed/NR0ZO0CE7WQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              </div>
+            </div>
+            <div className="col-md-6  box-shadow">
+              <h5 >HolaBot Covid-19 Ozone Disinfectant Machine</h5>
+              <p>Pudu HolaBot is a delivery robot which innovatively applies autonomous robot to the food, medical and other fields. Equipped with intelligent delivery, high carrying capacity，pagering function and voice control module, Pudu HolaBot is aiming to boost the turnaround efficiency in restaurants and to help the establishment of smart hospitals. Ultra-large Capacity
+60Kg carrying capacity, volume of 120L, 4 large-capacity trays, giving the restaurant a much better turnover. And it transfers medical stuff from the place of origin to the designated storage space with contactless delivery, helping to improve efficiency and lower infection rates.</p>
+
+            </div>
+
+          </div>
+
+
+
 
 
 
@@ -213,10 +256,9 @@ const PageDemonstration = () => {
 
         </div>
         <div className="container margin ">
-          <h3 className="demo-texts"> Purchase our Products and Receive a FREE gift - Eilik, <br></br> A little Companion Bot with Endless Fun</h3>
+          {/* <h3 className="demo-texts"> Purchase our Products and Receive a FREE gift - Eilik, <br></br> A little Companion Bot with Endless Fun</h3>
 
 
-          <div className="row  ">
             <div className="col-md-6  ">
               <div className="demo-video ">
                 <iframe className="round" width="100%" height="400" src="https://www.youtube.com/embed/7N60oFtjBIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -228,33 +270,58 @@ const PageDemonstration = () => {
                 Eilik's personality is evolving in response to your interactions with him. If you treat him with love, he will be happier; if you keep annoying him, he will be more naughty than usual.
               </p>
 
-            </div>
+            </div> */}
+                      <div className="row  ">
+
           </div>
-          <div className="deck">
-            <div className="item box-shadow">
-              <img src="./assets/tickCircle.png" alt="" />
+          <div className="deck ">
+            <div className="item ">
+            <div className="card">
+            <img src={require("../../assets/tickCircle.png")} alt="" />
+            <h4> Header</h4>
+
               <p>
                 Exactly how the robot should be used to achieve optimal
                 results
               </p>
+
+            </div>
             </div>
             <div className="item">
-              <img src="./assets/customerIssues.png" alt="" />
+            <div className="card">
+            <img src={require("../../assets/customerIssues.png")} alt="" />
+            <h4> Header</h4>
+
               <p>Exactly how the robot addresses typical customer issues</p>
+
+            </div>
             </div>
             <div className="item">
-              <img src="./assets/roboFacevector.png" alt="" />
+              <div className="card">
+
+              <img src={require("../../assets/roboFacevector.png")} alt="" />
+              <h4> Header</h4>
+
               <p>
                 Exactly how the robot can be customised and personalised
                 with their branding and logos
               </p>
+
+              </div>
+
             </div>
             <div className="item">
-              <img src="./assets/tailored.png" alt="" />
+            <div className="card">
+            <img src={require("../../assets/tailored.png")} alt="" />
+            <h4> Header</h4>
+
               <p>
                 Exactly how the robot can be tailored to the needs of
                 specific companies or individuals
               </p>
+
+            </div>
+
             </div>
           </div>
 

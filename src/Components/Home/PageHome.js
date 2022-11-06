@@ -2,13 +2,19 @@ import React from 'react';
 import OurRobot from './OurRobot';
 import RotateAnnimation from './RotateAnnimation';
 
-const PageHome = () => {
+const PageHome = (props) => {
+
+    const SelectCt=(event)=>{
+        props.setIndex(event);
+    }
+    
+    
     return (
-        <>
+        <div>
         <RotateAnnimation></RotateAnnimation>
-        <OurRobot></OurRobot>
+        <OurRobot onCtSelect={SelectCt}></OurRobot>
             
-        </>
+        </div>
     );
 };
 

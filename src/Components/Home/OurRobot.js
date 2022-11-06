@@ -3,8 +3,15 @@ import './ourRobot.css';
 import VideoCarusol from './VideoCarusol';
 import RevealButton from '../Body/RevealButton';
 import robotImages from '../allData/robotImages';
+import { Link } from 'react-router-dom';
+import data from '../allData/Data';
 
-const OurRobot = () => {
+const OurRobot = (props) => {
+const IndexHnadler=(event)=>{
+  console.log(event);
+props.onCtSelect(event);
+}
+
 
   useEffect(()=>{
     const readMore = document.querySelectorAll(".reveal-toggler");
@@ -46,7 +53,8 @@ if (el.checked) {
                       robotImages.disabilyRobots.map( pic => {
                         return (
                           <div className='img'>
-                          <img src={pic.img} alt="" />
+                            <Link to={`/products/${data[0].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(0)} /></Link>
+                          
                             </div>
     
                         )
@@ -141,7 +149,7 @@ if (el.checked) {
                       robotImages.agedCareRobots.map( pic => {
                         return (
                           <div className='img'>
-                          <img src={pic.img} alt="" />
+                            <Link to={`/products/${data[1].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(1)}/></Link>
                             </div>
     
                         )
@@ -154,12 +162,12 @@ if (el.checked) {
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
                     alt=""
-                    className="float1"
+                    className="float2"
                   />
                   <img
                     src={require("../../assets/Vector Smart Object copy 9.png")}
                     alt=""
-                    className="float2"
+                    className="float1"
                   />
                 </div>
                 <div className="card-body">
@@ -204,7 +212,7 @@ if (el.checked) {
                       robotImages.childCareRobots.map( pic => {
                         return (
                           <div className='img'>
-                          <img src={pic.img} alt="" />
+                            <Link to={`/products/${data[2].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(2)} /></Link>
                             </div>
     
                         )
@@ -261,7 +269,7 @@ if (el.checked) {
                       robotImages.companionRobots.map( pic => {
                         return (
                           <div className='img'>
-                          <img src={pic.img} alt="" />
+                            <Link to={`/products/${data[3].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(3)} /></Link>
                             </div>
     
                         )
@@ -274,12 +282,12 @@ if (el.checked) {
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
                     alt=""
-                    className="float1"
+                    className="float2"
                   />
                   <img
                     src={require("../../assets/Vector Smart Object copy 9.png")}
                     alt=""
-                    className="float2"
+                    className="float1"
                   />
                 </div>
                 <div className="card-body">
@@ -325,7 +333,7 @@ if (el.checked) {
                       robotImages.domesticRobots.map( pic => {
                         return (
                           <div className='img'>
-                          <img src={pic.img} alt="" />
+                            <Link to={`/products/${data[4].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(4)} /></Link>
                             </div>
     
                         )
@@ -388,7 +396,7 @@ if (el.checked) {
                       robotImages.petRobots.map( pic => {
                         return (
                           <div className='img'>
-                          <img src={pic.img} alt="" />
+                            <Link to={`/products/${data[6].category}`}><img src={pic.img} alt=""  onClick={()=>IndexHnadler(6)} /></Link>
                             </div>
     
                         )
@@ -401,12 +409,12 @@ if (el.checked) {
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
                     alt=""
-                    className="float1"
+                    className="float2"
                   />
                   <img
                     src={require("../../assets/Vector Smart Object copy 9.png")}
                     alt=""
-                    className="float2"
+                    className="float1"
                   />
                 </div>
                 <div className="card-body">
@@ -463,7 +471,7 @@ if (el.checked) {
             with your new robots.!
           </p>
           <div className="row justify-content-around align-items-center">
-            <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-5">
+            <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-6">
               <img src={require("../../assets/predicting.png")} alt="" srcSet="" />
               <div className="anim"></div>
             </div>
@@ -544,13 +552,13 @@ much space you have available.
               <input type="checkbox" id="read2" className="reveal-toggler" />
               <label htmlFor="read2" className="reveal-btn">READ MORE</label>
             </div>
-            <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-5">
+            <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-6">
               <img src={require("../../assets/machine-learning.png")} alt="" srcSet="" />
               <div className="anim anim2"></div>
             </div>
           </div>
           <div className="row justify-content-around align-items-center margin-botttom">
-            <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-5">
+            <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-6">
               <img src={require("../../assets/automation.png")} alt="" srcSet="" />
               <div className="anim anim3"></div>
             </div>

@@ -22,7 +22,8 @@ const PageAbout = () => {
       };
     });
 
-  } ,[] )
+  } ,[] );
+  
   
 
     return (
@@ -33,7 +34,7 @@ const PageAbout = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 col-12 animate hook4">
-                <img src={require("../../assets/standrobot.png")} alt="" />
+                <img src={require("../../assets/standrobot.2de6cf10edb77051ecd5-min.png")} alt="" />
             </div>
             <div className="col-md-6 col-12 py-5 px-3 animate hook2 text">
               <h2>ABOUT US</h2>
@@ -122,7 +123,7 @@ const PageAbout = () => {
           </div>
           <div className="row align-items-center flex-row-reverse">
             <div className="col-md-6 col-12 animate hook4">
-              <img src={ require("../../assets/sitrobot.png")} alt="" />
+              <img src={ require("../../assets/sitrobot.fce50700f67200b24fe5-min.png")} alt="" />
             </div>
             <div className="col-md-6 col-12 py-5 px-3 animate hook2 text">
               <h2>OUR VISION</h2>

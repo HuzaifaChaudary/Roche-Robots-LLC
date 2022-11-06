@@ -154,7 +154,8 @@ title="test"
               <div class="col">
                 <span></span>
                 <div class="card animate hook1">
-                  <img src="./assets/Total Sales.png" alt="" />
+                <img src={require("../../../assets/Total Sales.png")} alt="" />
+
                   <h4>Sales</h4>
                   <p>
                     We are always available to answer questions about our products
@@ -168,7 +169,8 @@ title="test"
                 <span></span>
   
                 <div class="card animate hook3">
-                  <img src="./assets/Online Support.png" alt="" />
+                <img src={require("../../../assets/Online Support.png")} alt="" />
+
                   <h4>Help And Support</h4>
                   <p>
                     If you need help or support, please reach us by phone, email,
@@ -181,7 +183,8 @@ title="test"
                 <span></span>
   
                 <div class="card animate hook3">
-                  <img src="./assets/Microphone.png" alt="" />
+                <img src={require("../../../assets/Microphone.png")} alt="" />
+
                   <h4>Media And Press</h4>
                   <p>
                     Our Media and Press team is available to help with any
@@ -195,8 +198,8 @@ title="test"
                 <span></span>
   
                 <div class="card animate hook2">
-                  <img src="./assets/Communication.png" alt="" />
-                  <h4>General Communication</h4>
+                  <img src={require("../../../assets/Communication.png")} alt="" />
+                  <h4> Communication</h4>
                   <p>
                     Here at Roche Robots, we welcome inquiries and feedback. For
                     general questions, email us through the contact form, and a

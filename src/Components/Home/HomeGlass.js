@@ -1,7 +1,7 @@
-import React ,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import OurPartner from '../Footer/OurPartner';
 
-const AboutGlass = () => {
+const HomeGlass = () => {
   useEffect(()=>{
     var VanillaTilt = (function () {
 
@@ -508,32 +508,54 @@ const AboutGlass = () => {
       }());
       
   })
+
     return (
         <div className='about' >
                     <div className="container-fluid sec5 ">
+
           <div className="container glass " >
             <div className="row " >
-            <div  data-tilt data-tilt-glare data-tilt-max-glare="0.3" className=" animate hook2 cards">
-                <img src={require ("../../assets/Melr.fb1ae15b3df5ea4afb06 (1).jpg")} alt="" />
-                <h4>Meleah Roche</h4>
-                <small className='glass-texts'>Owner and CEO</small>
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.3" className="newsletter col-md-6 text-center">
+            <h4>Subscribe to Newsletter and Events</h4>
 
-                <p>
-                Meleah has been nursing in emergency triage treatment rooms and has had a fascination about how robots have been transforming the medical and personal care industries. With this background, Meleah has used her skill-set and entrepreneurial stoicism to launch Roche Robots, and together with consultancy support from Steve, they have been driven to live their dream of a tech savvy Australia; where robots are in every home and business, keeping Australians competitive with the world of technology.
-                </p>
-              </div>
+            <form method="post"  action="contactmail.php">
+            <div class="mb-3 txt_field ">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    aria-describedby="helpname"
+                    required
+                  />
+                  <span></span>
+                                    <label htmlFor="name" class="form-label">Name</label>
 
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.3" class=" animate hook2 cards">
-             
-            <img src={require ("../../assets/Steve 1.5b8bc1688528e2f87881 (1).jpg")} alt="" />
-             <h4>Steve Roche</h4>
-             <small className='glass-texts'>Robot Consultant</small>
-             <p>
-             Steve has worked in the IT industry since Dos 3.0. Up until an acquired brain injury, Steve was working in building computers; web design; development; graphic art; document management and Intranets. Returning to IT has been Steve and Meleah’s passion, and they started building this robotics business in 2019 - until Covid-19 shut it down. Now going through rehabilitation from another injury; Steve is finally applying his knowledge of robots to assist consumers with the right robot for each need.
-             </p>
-           </div>
+                  <small id="helpname" class="form-text text-muted"></small>
+                </div>
+                <div class="mb-3 txt_field ">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    aria-describedby="helpname"
+                    required
+                  />
+                  <span></span>
+                                    <label htmlFor="name" class="form-label">Enter Your Email</label>
+
+                  <small id="helpname" class="form-text text-muted"></small>
+                </div>
+
+</form>
+           
+            <div >
+              <button>Send</button>
+            </div>
 
             </div>
+
+            </div>
+
   
             <div className="row py-5">
                 <h3>Our Partners</h3>
@@ -553,4 +575,4 @@ const AboutGlass = () => {
     );
 };
 
-export default AboutGlass;
+export default HomeGlass;

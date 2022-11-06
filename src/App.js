@@ -3,8 +3,8 @@ import './App.css';
 
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import Body from './Components/Body/Body';
 import { createContext, useState } from 'react';
+import MainBody from './Components/Body/MainBody';
 export  const CategoryContext=createContext();
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     <CategoryContext.Provider value={ctIndex}>
 
       <Header onClickCategory={getIndex} ></Header>
-      <Body ></Body>
+      <MainBody onClickCategory={getIndex} ></MainBody>
       <Footer></Footer>
 
     </CategoryContext.Provider>
