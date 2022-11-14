@@ -50,7 +50,7 @@ content: '';
 position: absolute;
 width: 2000px;
 height: 2000px;
-background-image:conic-gradient(transparent,transparent,transparent,#d400dd);
+
 animation: animate  4s linear infinite ;
 animation-delay: -2s;
 }
@@ -59,7 +59,7 @@ content: '';
 position: absolute;
 width: 2000px;
 height: 2000px;
-background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+
 animation: animate 4s linear infinite ;
 }
 @keyframes animate {

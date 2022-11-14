@@ -1,4 +1,3 @@
-// Link list
 const links = [
   {
     link: "https://www.facebook.com/Roche-Robots-108933881918473/",

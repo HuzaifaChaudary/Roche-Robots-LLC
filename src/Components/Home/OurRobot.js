@@ -1,42 +1,33 @@
-import React, { useEffect} from 'react';
-import './ourRobot.css';
-import VideoCarusol from './VideoCarusol';
-import RevealButton from '../Body/RevealButton';
-import robotImages from '../allData/robotImages';
-import { Link } from 'react-router-dom';
-import data from '../allData/Data';
+import React, { useEffect } from "react";
+import "./ourRobot.css";
+import RevealButton from "../Body/RevealButton";
 
 const OurRobot = (props) => {
-const IndexHnadler=(event)=>{
-  console.log(event);
-props.onCtSelect(event);
-}
+  const IndexHnadler = (event) => {
+    console.log(event);
+    props.onCtSelect(event);
+  };
 
-
-  useEffect(()=>{
+  useEffect(() => {
     const readMore = document.querySelectorAll(".reveal-toggler");
-const readMoreLabel = document.querySelectorAll(".reveal-btn");
-const visibleText = document.querySelectorAll(".visible-text");
-const hiddenText = document.querySelectorAll(".hidden-text");
+    const readMoreLabel = document.querySelectorAll(".reveal-btn");
+    const visibleText = document.querySelectorAll(".visible-text");
+    const hiddenText = document.querySelectorAll(".hidden-text");
 
-readMore.forEach((el, index) => {
-el.onclick = () => {
-if (el.checked) {
-  visibleText[index].style.display = "none";
-  hiddenText[index].style.display = "block";
-  readMoreLabel[index].innerHTML = "READ LESS";
-} else {
-  hiddenText[index].style.display = "none";
-  visibleText[index].style.display = "block";
-  readMoreLabel[index].innerHTML = "READ MORE";
-}
-};
-});
-
-} ,[])
- 
-
-
+    readMore.forEach((el, index) => {
+      el.onclick = () => {
+        if (el.checked) {
+          visibleText[index].style.display = "none";
+          hiddenText[index].style.display = "block";
+          readMoreLabel[index].innerHTML = "READ LESS";
+        } else {
+          hiddenText[index].style.display = "none";
+          visibleText[index].style.display = "block";
+          readMoreLabel[index].innerHTML = "READ MORE";
+        }
+      };
+    });
+  }, []);
 
   return (
     <div className="home">
@@ -47,9 +38,7 @@ if (el.checked) {
               <div className="card">
                 <div className="card-header">
                   <div className="grid">
-
-
-                    {
+                    {/* {
                       robotImages.disabilyRobots.map( pic => {
                         return (
                           <div className='img'>
@@ -59,10 +48,7 @@ if (el.checked) {
     
                         )
                       })
-                    }
-
-
-
+                    } */}
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -88,7 +74,8 @@ if (el.checked) {
                     robots that contribute towards mental physical health. They
                     assist disabled person's achieve greater independence and
                     quality of life.
-                    <br /><br />
+                    <br />
+                    <br />
                     Robots can assist disabilities such as:
                     <ul>
                       <li>Autism</li>
@@ -119,7 +106,8 @@ if (el.checked) {
                       <li>Amputees</li>
                     </ul>
                     And many more...
-                    <br /><br />
+                    <br />
+                    <br />
                     Disability robots can assist with daily activities such as
                     bathing, dressing, and eating. They can also help with
                     mobility tasks such as climbing stairs or getting in and out
@@ -129,12 +117,19 @@ if (el.checked) {
                     vary in their capabilities, they all share the common goal
                     of helping people with disabilities live more independent
                     and fulfilling lives.
-                    <br /><br />
+                    <br />
+                    <br />
                   </div>
-                  <input type="checkbox" id="read4" className="reveal-toggler" />
+                  <input
+                    type="checkbox"
+                    id="read4"
+                    className="reveal-toggler"
+                  />
                 </div>
                 <div className="card-footer">
-                <label htmlFor="read4" className="reveal-btn" >READ MORE</label>
+                  <label htmlFor="read4" className="reveal-btn">
+                    READ MORE
+                  </label>
                 </div>
               </div>
             </div>
@@ -142,22 +137,19 @@ if (el.checked) {
               <div className="card">
                 <div className="card-header">
                   <div className="grid">
-
-
-
-                     {
-                      robotImages.agedCareRobots.map( pic => {
-                        return (
-                          <div className='img'>
-                            <Link to={`/products/${data[1].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(1)}/></Link>
-                            </div>
-    
-                        )
-                      })
-                    }
-
-
-
+                    {/* {robotImages.agedCareRobots.map((pic) => {
+                      return (
+                        <div className="img">
+                          <Link to={`/products/${data[1].category}`}>
+                            <img
+                              src={pic.img}
+                              alt=""
+                              onClick={() => IndexHnadler(1)}
+                            />
+                          </Link>
+                        </div>
+                      );
+                    })} */}
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -194,7 +186,11 @@ if (el.checked) {
                     These robots provide an essential service for many people
                     who would otherwise be unable to live independently.
                   </p>
-                  <input type="checkbox" id="read5" className="reveal-toggler" />
+                  <input
+                    type="checkbox"
+                    id="read5"
+                    className="reveal-toggler"
+                  />
                 </div>
                 <div className="card-footer">
                   <RevealButton></RevealButton>
@@ -204,23 +200,20 @@ if (el.checked) {
             <div className="col animate hook2">
               <div className="card">
                 <div className="card-header">
-                <div className="grid">
-
-
-
-                     {
-                      robotImages.childCareRobots.map( pic => {
-                        return (
-                          <div className='img'>
-                            <Link to={`/products/${data[2].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(2)} /></Link>
-                            </div>
-    
-                        )
-                      })
-                    }
-
-
-                    
+                  <div className="grid">
+                    {/* {robotImages.childCareRobots.map((pic) => {
+                      return (
+                        <div className="img">
+                          <Link to={`/products/${data[2].category}`}>
+                            <img
+                              src={pic.img}
+                              alt=""
+                              onClick={() => IndexHnadler(2)}
+                            />
+                          </Link>
+                        </div>
+                      );
+                    })} */}
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -251,33 +244,36 @@ if (el.checked) {
                     that we have a childcare robot that will meet your
                     expectations.
                   </p>
-                  <input type="checkbox" id="read6" className="reveal-toggler" />
+                  <input
+                    type="checkbox"
+                    id="read6"
+                    className="reveal-toggler"
+                  />
                 </div>
                 <div className="card-footer">
-                <label htmlFor="read6" className="reveal-btn">READ MORE</label>
+                  <label htmlFor="read6" className="reveal-btn">
+                    READ MORE
+                  </label>
                 </div>
               </div>
             </div>
             <div className="col animate hook1">
               <div className="card">
                 <div className="card-header">
-                <div className="grid">
-
-
-
-                {
-                      robotImages.companionRobots.map( pic => {
-                        return (
-                          <div className='img'>
-                            <Link to={`/products/${data[3].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(3)} /></Link>
-                            </div>
-    
-                        )
-                      })
-                    }
-
-
-                    
+                  <div className="grid">
+                    {/* {robotImages.companionRobots.map((pic) => {
+                      return (
+                        <div className="img">
+                          <Link to={`/products/${data[3].category}`}>
+                            <img
+                              src={pic.img}
+                              alt=""
+                              onClick={() => IndexHnadler(3)}
+                            />
+                          </Link>
+                        </div>
+                      );
+                    })} */}
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -306,7 +302,8 @@ if (el.checked) {
                     them to respond to their environment and the needs of their
                     owners. For example, some robots can detect when their owner
                     is sad or stressed and provide comfort accordingly.
-                    <br /><br />
+                    <br />
+                    <br />
                     As companion robots become more advanced, they are
                     increasingly used in healthcare settings such as hospitals
                     and nursing homes. In these settings, companion robots can
@@ -315,33 +312,36 @@ if (el.checked) {
                     likely become even more commonplace, appearing in various
                     settings and fulfilling various roles.
                   </p>
-                  <input type="checkbox" id="read7" className="reveal-toggler" />
+                  <input
+                    type="checkbox"
+                    id="read7"
+                    className="reveal-toggler"
+                  />
                 </div>
                 <div className="card-footer">
-                <label htmlFor="read7" className="reveal-btn">READ MORE</label>
+                  <label htmlFor="read7" className="reveal-btn">
+                    READ MORE
+                  </label>
                 </div>
               </div>
             </div>
             <div className="col animate hook3">
               <div className="card">
                 <div className="card-header">
-                <div className="grid">
-
-
-
-                {
-                      robotImages.domesticRobots.map( pic => {
-                        return (
-                          <div className='img'>
-                            <Link to={`/products/${data[4].category}`}><img src={pic.img} alt="" onClick={()=>IndexHnadler(4)} /></Link>
-                            </div>
-    
-                        )
-                      })
-                    }
-
-
-                    
+                  <div className="grid">
+                    {/* {robotImages.domesticRobots.map((pic) => {
+                      return (
+                        <div className="img">
+                          <Link to={`/products/${data[4].category}`}>
+                            <img
+                              src={pic.img}
+                              alt=""
+                              onClick={() => IndexHnadler(4)}
+                            />
+                          </Link>
+                        </div>
+                      );
+                    })} */}
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -369,7 +369,8 @@ if (el.checked) {
                     vacuuming, mopping, and dusting. Our domestic robots are
                     some of the most advanced on the market, and they are
                     perfect for busy families who want to outsource some of
-                    their cleaning duties. <br /><br />
+                    their cleaning duties. <br />
+                    <br />
                     In addition to vacuum cleaners, we also offer robotic mops
                     and window cleaners. Our domestic robots are quiet,
                     efficient, and easy to use, and they come with various
@@ -378,33 +379,36 @@ if (el.checked) {
                     can clean your windows, our company has the perfect solution
                     for you.
                   </p>
-                  <input type="checkbox" id="read8" className="reveal-toggler" />
+                  <input
+                    type="checkbox"
+                    id="read8"
+                    className="reveal-toggler"
+                  />
                 </div>
                 <div className="card-footer">
-                <label htmlFor="read8" className="reveal-btn">READ MORE</label>
+                  <label htmlFor="read8" className="reveal-btn">
+                    READ MORE
+                  </label>
                 </div>
               </div>
             </div>
             <div className="col animate hook2">
               <div className="card">
                 <div className="card-header">
-                <div className="grid">
-
-
-
-                {
-                      robotImages.petRobots.map( pic => {
-                        return (
-                          <div className='img'>
-                            <Link to={`/products/${data[6].category}`}><img src={pic.img} alt=""  onClick={()=>IndexHnadler(6)} /></Link>
-                            </div>
-    
-                        )
-                      })
-                    }
-
-
-                    
+                  <div className="grid">
+                    {/* {robotImages.petRobots.map((pic) => {
+                      return (
+                        <div className="img">
+                          <Link to={`/products/${data[6].category}`}>
+                            <img
+                              src={pic.img}
+                              alt=""
+                              onClick={() => IndexHnadler(6)}
+                            />
+                          </Link>
+                        </div>
+                      );
+                    })} */}
                   </div>
                   <img
                     src={require("../../assets/Vector Smart Object1 copy 9.png")}
@@ -438,10 +442,16 @@ if (el.checked) {
                     found to decrease elderly dementia patients’ anxiety,
                     stress, and use of psychoactive and pain medications.
                   </p>
-                  <input type="checkbox" id="read9" className="reveal-toggler" />
+                  <input
+                    type="checkbox"
+                    id="read9"
+                    className="reveal-toggler"
+                  />
                 </div>
                 <div className="card-footer">
-                <label htmlFor="read9" className="reveal-btn">READ MORE</label>
+                  <label htmlFor="read9" className="reveal-btn">
+                    READ MORE
+                  </label>
                 </div>
               </div>
             </div>
@@ -451,7 +461,6 @@ if (el.checked) {
 
       <div className="container-fluid video2 py-3 px-3">
         <div className="container">
-          <VideoCarusol className="round"></VideoCarusol>
           <p> </p>
         </div>
       </div>
@@ -459,11 +468,14 @@ if (el.checked) {
       <div className="container-fluid sec2 ">
         <img
           src={require("../../assets/Vector Smart Object copy 8.png")}
-
-          alt="" className="bg1" />
+          alt=""
+          className="bg1"
+        />
         <img
           src={require("../../assets/Vector Smart Object.png")}
-          alt="" className="bg2" />
+          alt=""
+          className="bg2"
+        />
         <div className="container">
           <h2>SERVICE WE PROVIDE</h2>
           <p className="pb-5 pt-2">
@@ -472,7 +484,11 @@ if (el.checked) {
           </p>
           <div className="row justify-content-around align-items-center">
             <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-6">
-              <img src={require("../../assets/predicting.png")} alt="" srcSet="" />
+              <img
+                src={require("../../assets/predicting.png")}
+                alt=""
+                srcSet=""
+              />
               <div className="anim"></div>
             </div>
             <div className="col-lg-6 col-sm-8 text py-3 animate hook2">
@@ -495,7 +511,8 @@ if (el.checked) {
                 comprehensive training on all its features. This will help you
                 to get the most out of your new companion. You'll learn to use
                 its basic functions and more advanced features such as
-                programming and customizing its behavior. <br /><br />
+                programming and customizing its behavior. <br />
+                <br />
                 We want you to be comfortable with your robot, so we'll take the
                 time to make sure you understand everything. By the end of the
                 training, you'll be an expert on your new robot and ready to
@@ -504,7 +521,8 @@ if (el.checked) {
                 first thing you'll want to do is navigate to the settings menu.
                 From here, you can adjust various aspects of your robot's
                 behavior.
-                <br /><br />
+                <br />
+                <br />
                 You can choose which programs to install on your robot. If
                 you're adventurous, you can explore the wide world of android
                 apps. There are thousands of apps available, many designed
@@ -512,12 +530,12 @@ if (el.checked) {
                 anything.
               </p>
               <input type="checkbox" id="read1" className="reveal-toggler" />
-              <label htmlFor="read1" className="reveal-btn">READ MORE</label>
+              <label htmlFor="read1" className="reveal-btn">
+                READ MORE
+              </label>
             </div>
           </div>
-          <div
-            className="row justify-content-around align-items-center flex-wrap-reverse"
-          >
+          <div className="row justify-content-around align-items-center flex-wrap-reverse">
             <div className="col-lg-6 col-sm-8 text py-3 animate hook1">
               <h3>Program Coding</h3>
               <p className="visible-text">
@@ -531,13 +549,13 @@ if (el.checked) {
               </p>
               <p className="hidden-text">
                 Before you buy a robot, it is important to consider what tasks
-                you need it to perform and howimport RevealButton from './RevealButton';
-much space you have available.
-                You also want to think about whether you need a robot that can
-                move around freely or one that is stationary. Our team can help
-                you to assess your needs and choose the right model for your
-                home or office. We also offer a comprehensive set-up service, so
-                you can be sure your new robot will be up and running smoothly.
+                you need it to perform and howimport RevealButton from
+                './RevealButton'; much space you have available. You also want
+                to think about whether you need a robot that can move around
+                freely or one that is stationary. Our team can help you to
+                assess your needs and choose the right model for your home or
+                office. We also offer a comprehensive set-up service, so you can
+                be sure your new robot will be up and running smoothly.
                 <br />
                 <br />
                 We provide ongoing support and maintenance, so you can always
@@ -550,16 +568,26 @@ much space you have available.
                 services to ensure we provide the best care for your robot.
               </p>
               <input type="checkbox" id="read2" className="reveal-toggler" />
-              <label htmlFor="read2" className="reveal-btn">READ MORE</label>
+              <label htmlFor="read2" className="reveal-btn">
+                READ MORE
+              </label>
             </div>
             <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-6">
-              <img src={require("../../assets/machine-learning.png")} alt="" srcSet="" />
+              <img
+                src={require("../../assets/machine-learning.png")}
+                alt=""
+                srcSet=""
+              />
               <div className="anim anim2"></div>
             </div>
           </div>
           <div className="row justify-content-around align-items-center margin-botttom">
             <div className="col-lg-5 col-sm-8 animate hook4 position-relative overflow-hidden py-6">
-              <img src={require("../../assets/automation.png")} alt="" srcSet="" />
+              <img
+                src={require("../../assets/automation.png")}
+                alt=""
+                srcSet=""
+              />
               <div className="anim anim3"></div>
             </div>
             <div className="col-lg-6 col-sm-8 text py-3 animate hook2 ">
@@ -583,15 +611,14 @@ much space you have available.
                 providing you with the best possible experience.
               </p>
               <input type="checkbox" id="read3" className="reveal-toggler" />
-              <label htmlFor="read3" className="reveal-btn">READ MORE</label>
+              <label htmlFor="read3" className="reveal-btn">
+                READ MORE
+              </label>
             </div>
           </div>
         </div>
       </div>
-      
-
     </div>
-
   );
 };
 

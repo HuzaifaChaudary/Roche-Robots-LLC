@@ -1,10 +1,10 @@
-import React from 'react';
-import OurPartner from './../Footer/OurPartner';
+import React from "react";
+import OurPartner from "./../Footer/OurPartner";
 
 const ServiceGlass = () => {
-    return (
-        <div className='services'> 
-                  <div class="container-fluid sec3">
+  return (
+    <div className="services">
+      <div class="container-fluid sec3">
         <div class="container">
           <h6>
             All in all, cutting edge robots are now the solution to most of our
@@ -21,7 +21,8 @@ const ServiceGlass = () => {
               Here at Roche Robots, we believe in providing our customers with
               the proper guidance and care as they venture into their own
               versions of a robotics future.
-              <br /><br />
+              <br />
+              <br />
               In the market for robots that will help you or your business grow?
               Feel free to reach out to us here.
             </p>
@@ -29,9 +30,8 @@ const ServiceGlass = () => {
           </div>
         </div>
       </div>
-
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ServiceGlass;

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import {  } from 'react-router-dom';
-import links from '../allData/SocialLinks';
-import './social.css'
+import React, { useEffect } from "react";
+import {} from "react-router-dom";
+import links from "../Data/SocialLinks";
+import "./social.css";
 
 const Social = () => {
   useEffect(() => {
@@ -14,29 +14,17 @@ const Social = () => {
         btncontainer.classList.remove("hidden");
       }
     };
-
-  }, [])
+  }, []);
 
   return (
-    <div className='btncontainer hidden'>
+    <div className="btncontainer hidden">
       <ul>
-        {
-          links.map(data => <a 
-                        href={data.src}
-                        key={links.src}
-                        target='blank'>
-                      <li>
-                        {data.icon}
-                      </li>
-                    </a>
-
-
-
-
-          )
-        }
+        {links.map((data) => (
+          <a href={data.src} key={links.src} target="blank">
+            <li>{data.icon}</li>
+          </a>
+        ))}
       </ul>
-
     </div>
   );
 };

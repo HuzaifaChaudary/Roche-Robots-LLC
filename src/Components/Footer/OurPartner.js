@@ -1,7 +1,7 @@
-import React, {  } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Partners from '../../Components/allData/Partner'
+import Partners from "../Data/Partner";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,11 +13,8 @@ import "./OurPartner.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-
-  const OurPartner= ()=>
-  {
-
-   return (
+const OurPartner = () => {
+  return (
     <div className="partner">
       <Swiper
         spaceBetween={10}
@@ -36,10 +33,8 @@ import { Autoplay, Pagination, Navigation } from "swiper";
           1024: {
             slidesPerView: 5,
             spaceBetween: 50,
-          }
-        }
-            
-        }
+          },
+        }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -51,12 +46,13 @@ import { Autoplay, Pagination, Navigation } from "swiper";
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper "
       >
-        {
-            Partners.map( pt => <SwiperSlide  key={pt.id} className="bullet"><img src={pt.img} alt=""  /></SwiperSlide> )
-        }
-        
+        {Partners.map((pt) => (
+          <SwiperSlide key={pt.id} className="bullet">
+            <img src={pt.img} alt="" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
-    }
-  export default  OurPartner;
+};
+export default OurPartner;

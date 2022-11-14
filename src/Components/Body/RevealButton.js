@@ -1,12 +1,12 @@
-import React, {useEffect, } from 'react';
+import React, { useEffect } from "react";
 
 const RevealButton = () => {
-  useEffect(()=>{
+  useEffect(() => {
     const readMore = document.querySelectorAll(".reveal-toggler");
     const readMoreLabel = document.querySelectorAll(".reveal-btn");
     const visibleText = document.querySelectorAll(".visible-text");
     const hiddenText = document.querySelectorAll(".hidden-text");
-    
+
     readMore.forEach((el, index) => {
       el.onchange = () => {
         if (el.checked) {
@@ -20,15 +20,13 @@ const RevealButton = () => {
         }
       };
     });
+  }, []);
 
-  } ,[] )
-  
-  
-   
-  
-    return (
-        <label htmlFor="read5" className="reveal-btn"  >READ MORE</label>
-        );
+  return (
+    <label htmlFor="read5" className="reveal-btn">
+      READ MORE
+    </label>
+  );
 };
 
 export default RevealButton;

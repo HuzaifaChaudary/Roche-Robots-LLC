@@ -4,11 +4,6 @@
     box-sizing: border-box;
   }
   
-  
-  
-  
-  
-  
   .navbar {
     color: white;
     position: fixed !important;
@@ -18,7 +13,7 @@
     min-height: 5rem;
     font-family: "popins-light";
     z-index: 5;
-    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.3);
+
   }
   
   .navbar .navbar-brand img {
@@ -151,12 +146,7 @@
     }
   
   }
-  
-  
-  
-  /*//Nav new//*/
-  
-  
+
   .nav-menu{
      
       font-family: monospace;
@@ -183,10 +173,7 @@
     align-items: center;
     transition: .5s;
     cursor: pointer;
-    background-image: -webkit-linear-gradient(top, #33393E, #2C3237);
-    background-image: linear-gradient( #2C3237, #2C3237);
-    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.182), inset 0px 4px 1px -1px #3A4044, inset 0px -3px 1px -1px #010001;
-  
+
   }
   
   .nav-menu ul li:hover{
@@ -199,7 +186,7 @@
        inset: 0;
       position: absolute;
       border-radius: 60px;
-      background: linear-gradient(45deg,var(--i),var(--j));
+ 
       opacity: 0;
       transition: .5s;
   }
@@ -213,7 +200,7 @@
       width: 100%;
       height: 100%;
       border-radius: 60px;
-      background: linear-gradient(45deg,var(--i),var(--j));
+ 
       transition: .5s;
       filter: blur(15px );
       z-index: -1;
@@ -301,13 +288,9 @@
   background-color: rgb(10, 11, 11);
   margin: 0 3px;
   list-style: none;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 60px;
   transition: .5s;
   color: white;
   cursor: pointer;
-  background-image: -webkit-linear-gradient( #33393E, #2C3237);
-  background-image: linear-gradient( #2C3237, #2C3237);
-  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.182), inset 0px 4px 1px -1px #3A4044, inset 0px -3px 1px -1px #010001;
 
 }
