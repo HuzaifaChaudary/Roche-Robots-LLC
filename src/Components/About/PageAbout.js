@@ -440,10 +440,10 @@ const PageAbout = () => {
           }}
         /> */}
         <div
-          className="glassContainer one col-md-6 col-12"
+          className="glassContainer one col-md-6 col-12  container-fluid "
           style={{ width: 1000 }}
         >
-          <div className="row">
+          <div className="row col-md-12 col-12">
             <div
               className="card border-dark mb-0 bg-transparent py-5 owl"
               style={{ width: 300 }}

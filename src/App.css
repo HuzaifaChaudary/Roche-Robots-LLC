@@ -33,16 +33,11 @@
 
 .main-image {
     position: scroll;
-    left: 0;
-    right: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+    height: 250px;
     z-index: -3;
     object-fit: cover;
-    object-position: top;
-    height: 350px;
-    width: 1350px;
+    object-position: top;   
     /* padding-bottom: 250px; */
     /* position: absolute; */
 }

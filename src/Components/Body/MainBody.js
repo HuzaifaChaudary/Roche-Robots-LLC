@@ -16,7 +16,7 @@ const MainBody = (props) => {
           src={require("../../assets/black-bg.jpg")}
           alt=""
           className="main-img"
-          style={{ height: 1000, width: 1500 }}
+          // style={{ height: 1000, width: 1500 }}
         />
         <img
           src={require("../../assets/zags.png")}
@@ -43,7 +43,7 @@ const MainBody = (props) => {
         src={require("../../assets/wire.png")}
         alt=""
         className="main-image"
-        style={{ height: 250, width: 1500 }}
+        // style={{ height: 250, width: 1500 }}
       />
     </>
   );
